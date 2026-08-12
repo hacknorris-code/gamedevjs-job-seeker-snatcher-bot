@@ -59,7 +59,7 @@ class GeminiControllerSingleton {
                     {
                         // TODO: double check if using systemInstructions will lead to less tokens being consumed by API
                         // TODO: might need to reduce token consumptions, only consume upto x characters in a message for instance. There are libs that can do even more
-                        text: `Set post_type to 0 if the person in the following post is looking for paid work, not looking for teammates for non-paying work like game jams, hackathons, or similar competitions, 1 if they might be looking to join a team, but not for paid work, and 2 if this isn't about work: ${prompt}`,
+                        text: `Set post_type to 0 if the person in the following post is looking for paid work or is a recruiter, not looking for teammates for non-paying work like game jams, hackathons, or similar competitions, 1 if they might be looking to join a team, but not for paid work, and 2 if this isn't about work: ${prompt}`,
                     },
                 ],
             },
